@@ -388,35 +388,10 @@ export default function Resume() {
                         </Grid>
                         <Grid item xs={12} sm={6} md={4}>
                             <Card className={classes.card}>
-                                <CardMedia component="img" alt="project" image="https://i.imgur.com/dkbrU9T.gif" height="200px" style={{objectFit:"contain"}}/>
-                                <CardContent style={{paddingBottom:"5px"}}>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        Mern OAuth
-                                    </Typography>
-                                    <Divider/>
-                                    <Typography variant="body2" component="p">
-                                            As the name implies. It is an MERN full stack app for authentication. It use React as front end, MongoDB for storing users data, PassportJS for authentication, bcrypt for password hashing and many other modules.
-                                    </Typography>
-                                    <Divider/>
-                                    <CardActions disableSpacing>
-                                        <a href="https://github.com/santos-parajuli/MERN_OAUTH">
-                                        <Button size="small">
-                                            See Code
-                                        </Button>
-                                        </a>
-                                        <Button size="small">
-                                            View Live
-                                        </Button>
-                                    </CardActions>
-                                </CardContent>
-                            </Card>
-                        </Grid>
-                        <Grid item xs={12} sm={6} md={4}>
-                            <Card className={classes.card}>
                                 <CardMedia component="img" alt="project" image="https://i.imgur.com/Js1KHHV.gif" height="200px" style={{objectFit:"contain"}}/>
                                 <CardContent style={{paddingBottom:"5px"}}>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        Mern Authentication
+                                        Mern OAuth
                                     </Typography>
                                     <Divider/>
                                     <Typography variant="body2" component="p">
@@ -424,7 +399,7 @@ export default function Resume() {
                                     </Typography>
                                     <Divider/>
                                     <CardActions disableSpacing>
-                                        <a href="https://github.com/santos-parajuli/MERN_Authentication">
+                                        <a href="https://github.com/santos-parajuli/MERN_OAUTH">
                                         <Button size="small">
                                             See Code
                                         </Button>
@@ -457,7 +432,32 @@ export default function Resume() {
                                     </CardActions>
                                 </CardContent>
                             </Card>
-                        </Grid>        
+                        </Grid>
+                        <Grid item xs={12} sm={6} md={4}>
+                            <Card className={classes.card}>
+                                <CardMedia component="img" alt="project" image="https://i.imgur.com/dkbrU9T.gif" height="200px" style={{objectFit:"contain"}}/>
+                                <CardContent style={{paddingBottom:"5px"}}>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        Mern Authentication
+                                    </Typography>
+                                    <Divider/>
+                                    <Typography variant="body2" component="p">
+                                            As the name implies. It is an MERN full stack app for authentication. It use React as front end, MongoDB for storing users data, PassportJS for authentication, bcrypt for password hashing and many other modules.
+                                    </Typography>
+                                    <Divider/>
+                                    <CardActions disableSpacing>
+                                        <a href="https://github.com/santos-parajuli/MERN_Authentication">
+                                        <Button size="small">
+                                            See Code
+                                        </Button>
+                                        </a>
+                                        <Button size="small">
+                                            View Live
+                                        </Button>
+                                    </CardActions>
+                                </CardContent>
+                            </Card>
+                        </Grid>
                     </Grid>
             </Grid>
         </Grid>
