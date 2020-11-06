@@ -395,7 +395,7 @@ export default function Resume() {
                                     </Typography>
                                     <Divider/>
                                     <Typography variant="body2" component="p">
-                                        This app is an upgraded verison of <a href="https://github.com/santos-parajuli/MERN_Authentication"> Mern authentication</a>. It includes authentication with third party provider like facebook and google which is widely used nowdays. 
+                                        This app is an upgraded verison of <a href="https://github.com/santos-parajuli/MERN_Authentication"> Mern authentication</a>. It includes authentication with third party provider like facebook and google which is widely used nowdays.It have better worl structure in project. 
                                     </Typography>
                                     <Divider/>
                                     <CardActions disableSpacing>
