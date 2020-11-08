@@ -379,9 +379,11 @@ export default function Resume() {
                                             See Code
                                         </Button>
                                         </a>
-                                        <Button size="small">
-                                            View Live
-                                        </Button>
+                                        <a href="https://lyrical.siwani.com.np">
+                                            <Button size="small">
+                                                View Live
+                                            </Button>
+                                            </a>
                                     </CardActions>
                                 </CardContent>
                             </Card>
@@ -404,9 +406,11 @@ export default function Resume() {
                                             See Code
                                         </Button>
                                         </a>
-                                        <Button size="small">
-                                            View Live
-                                        </Button>
+                                        <a href="https://oauthmern.netlify.app/#/">
+                                            <Button size="small">
+                                                View Live
+                                            </Button>
+                                            </a>
                                     </CardActions>
                                 </CardContent>
                             </Card>
@@ -425,9 +429,9 @@ export default function Resume() {
                                     <Divider/>
                                     <CardActions disableSpacing>
                                         <a href="https://github.com/santos-parajuli/MADProject">
-                                        <Button size="small">
-                                            See Code
-                                        </Button>
+                                            <Button size="small">
+                                                See Code
+                                            </Button>
                                         </a>
                                     </CardActions>
                                 </CardContent>
@@ -451,9 +455,11 @@ export default function Resume() {
                                             See Code
                                         </Button>
                                         </a>
-                                        <Button size="small">
-                                            View Live
-                                        </Button>
+                                        <a href="https://oauthmern.netlify.app/#/">
+                                            <Button size="small">
+                                                View Live
+                                            </Button>
+                                        </a>
                                     </CardActions>
                                 </CardContent>
                             </Card>
