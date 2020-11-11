@@ -57,7 +57,7 @@ const useStyles= makeStyles({
         width:"80%",
         margin:"auto",
         color:"#696564",
-        textAlign:"justify"
+        textAlign:"center"
     },social:{
     width:"80%",
     margin:"auto",
