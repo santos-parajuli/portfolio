@@ -379,7 +379,7 @@ export default function Resume() {
                                             See Code
                                         </Button>
                                         </a>
-                                        <a href="https://lyrical.siwani.com.np">
+                                        <a href="https://lyricalmern.netlify.app/">
                                             <Button size="small">
                                                 View Live
                                             </Button>
