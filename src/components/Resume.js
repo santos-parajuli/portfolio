@@ -363,7 +363,7 @@ export default function Resume() {
                     <Grid container direction="row">
                         <Grid item xs={12} sm={6} md={4}>
                             <Card className={classes.card}>
-                                <CardMedia component="img" alt="project" image="https://i.imgur.com/xulCSoN.gifv" height="200px" style={{objectFit:"contain"}}/>
+                                <CardMedia component="img" alt="project" image="https://i.imgur.com/xulCSoN.gif" height="200px" style={{objectFit:"contain"}}/>
                                 <CardContent style={{paddingBottom:"5px"}}>
                                     <Typography gutterBottom variant="h5" component="h2">
                                         Santosh Sakar Pustak Pasal Website
