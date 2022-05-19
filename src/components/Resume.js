@@ -145,7 +145,7 @@ export default function Resume() {
                         </Grid>
                         <Divider  style={{marginTop:"10px"}} />
                         <Grid item className={classes.objective}>
-                            <p>As a final year student, I am looking for web development internship opportunities where I can utilize my technical skills for developing real-life projects and enhance my knowledge in new and emerging technologies of web development.</p>
+                            <p>As a graduate student, I am looking for web development opportunities where I can utilize my technical skills for developing real-life projects and enhance my knowledge in new and emerging technologies of web development.</p>
                         </Grid>
                         <Divider  style={{marginTop:"10px"}} />
                         <Grid item className={classes.social}>
