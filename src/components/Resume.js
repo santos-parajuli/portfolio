@@ -297,7 +297,7 @@ export default function Resume() {
                                         </TimelineSeparator>
                                         <TimelineContent>
                                             <Typography variant="body2">
-                                                2014-2016
+                                                2015
                                             </Typography>
                                             <Paper elevation={3} className={classes.timelinePaper} >
                                                 <Typography variant="h6" component="h1">
@@ -318,7 +318,7 @@ export default function Resume() {
                                         </TimelineSeparator>
                                         <TimelineContent>
                                                 <Typography variant="body2">
-                                                Jan. 2014 - Jan. 2016
+                                                 2017
                                             </Typography>
                                             <Paper elevation={3} className={classes.timelinePaper} >
                                                 <Typography variant="h6" component="h1">
@@ -339,7 +339,7 @@ export default function Resume() {
                                         </TimelineSeparator>
                                         <TimelineContent>
                                             <Typography variant="body2">
-                                                July 2016 - July 2021
+                                                July 2017 - July 2021
                                             </Typography>
                                             <Paper elevation={3} className={classes.timelinePaper} >
                                                 <Typography variant="h6" component="h1">
