@@ -9,9 +9,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import SchoolIcon from '@material-ui/icons/School';
-import DomainIcon from '@material-ui/icons/Domain';
-import ApartmentIcon from '@material-ui/icons/Apartment';
-import React from 'react'
+import React from 'react';
 
 const useStyles= makeStyles({
     leftContainer:{
@@ -88,6 +86,34 @@ const useStyles= makeStyles({
 
 export default function Resume() {
     const classes = useStyles();
+    const educationData = [
+        {date:"September 2022 - Present",name:"Conestoga College, Canada",course:"Post-Graduate in Web Development"},
+        {date:"July 2017 - July 2021",name:"Amritsar College Of Engineering And technology, India",course:"B.Tech CSE [PTU] - Average 8.9CGPA"},
+        {date:"2017",name:"Orchid Higher Secondary School, Nepal",course:"Grade XI and XII [NEB] - 76%"},
+        {date:"2015",name:"Little Flower School, Nepal",course:"Grade X [SLC] - 85.9%"},
+    ];
+    const projectData=[
+        {image:"https://i.imgur.com/Js1KHHV.gif",name:"Santosh Sakar Pustak pasal",desc:"It is an MERN full stack app for my home shop Santosh Sakar Pustak Pasal. I created this website so that our customers can order the book online.",viewLive:"https://santoshsakar.netlify.app/",},
+        {image:"https://i.imgur.com/NMkzZy5.gif",name:"Lyrical",desc:"This is a react app with Node and Express as backend. This app shows the Lyrics of the searched song using Genius API. This project helped me lear redux,axios multiple request,class components of react and many more.",viewLive:"https://lyricalmern.netlify.app/",seeCode:"https://github.com/santos-parajuli/Lyrical"},
+        {image:"https://i.imgur.com/Js1KHHV.gif",name:"Mern Oauth",desc:"This app is an upgraded verison of Mern authentication. It includes authentication with third party provider like facebook and google which is widely used nowdays.It have better worl structure in project.",viewLive:"https://oauthmern.netlify.app/#/",seeCode:"https://github.com/santos-parajuli/MERN_OAUTH"},
+        {image:"https://i.imgur.com/HfCSMEm.png",name:"INAWISH",desc:"This is a mobile application build with android studio.This is just an try to imitate instagram. This is a photo sharing app. It use firebase for authenticating user and firestore to store data uploaded.",seeCode:"https://github.com/santos-parajuli/MADProject"},
+        {image:"https://i.imgur.com/dkbrU9T.gif",name:"Mern Authentication",desc:"As the name implies. It is an MERN full stack app for authentication. It use React as front end, MongoDB for storing users data, PassportJS for authentication, bcrypt for password hashing and many other modules.",viewLive:"https://oauthmern.netlify.app/#/",seeCode:"https://github.com/santos-parajuli/MERN_Authentication"},
+    
+    ];
+    const skills=[
+        {name:"HTML,CSS",value:"90"},
+        {name:"ReactJS",value:"85"},
+        {name:"NodeJS",value:"70"},
+        {name:"Django",value:"50"},
+        {name:"Firebase, MongoDB",value:"70"},
+    ];
+    const aboutMe =[
+        {topic:"Programming",desc:"C++/C , JavaScript , Python , Java"},
+        {topic:"Web technologies",desc:"Django , NodeJS , React , Angular , Express"},
+        {topic:"Interest",desc:"Web Development , Mobile App Development , Big Data , IOT , AI"},
+        {topic:"Languages",desc:"English , Hindi , Nepali"},
+        {topic:"Nationality",desc:"Nepali"},
+    ];
     return (
         <Grid container>
             <Grow in="true">
@@ -109,7 +135,7 @@ export default function Resume() {
                                     <ListItemIcon>
                                         <PhoneIcon/>
                                     </ListItemIcon>
-                                    <ListItemText primary="+9779845082738"  />
+                                    <ListItemText primary="+15197745905"  />
                                 </ListItem>
                                 <ListItem className={classes.listItem}>
                                     <ListItemIcon>
@@ -117,7 +143,7 @@ export default function Resume() {
                                     </ListItemIcon>
                                     <ListItemText primary="santosh.parajuli255@gmail.com"  />                                
                                 </ListItem >
-                                <a href="https://www.siwani.com.np/">
+                                <a target="_blank" rel="noreferrer" href="https://www.siwani.com.np/">
                                 <ListItem className={classes.listItem}>
                                     <ListItemIcon>
                                         <HomeIcon/>
@@ -125,7 +151,7 @@ export default function Resume() {
                                     <ListItemText primary="www.siwani.com.np"  />
                                 </ListItem>
                                 </a>
-                                <a href="https://github.com/santos-parajuli">
+                                <a target="_blank" rel="noreferrer" href="https://github.com/santos-parajuli">
                                 <ListItem className={classes.listItem}>
                                     <ListItemIcon>
                                         <GitHubIcon/>
@@ -133,7 +159,7 @@ export default function Resume() {
                                     <ListItemText primary="santos-parajuli"  />
                                 </ListItem>
                                 </a>
-                                <a href="https://www.linkedin.com/in/santosh-parajuli-a15057184/">
+                                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/santosh-parajuli-a15057184/">
                                  <ListItem className={classes.listItem}>
                                     <ListItemIcon>
                                         <LinkedInIcon/>
@@ -150,7 +176,7 @@ export default function Resume() {
                         <Divider  style={{marginTop:"10px"}} />
                         <Grid item className={classes.social}>
                             <List >
-                                <a href="https://www.facebook.com/santosh.parajuli.37">
+                                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/santosh.parajuli.37">
                                 <ListItem className={classes.listItem}>
                                     <ListItemIcon>
                                         <FacebookIcon/>
@@ -158,7 +184,7 @@ export default function Resume() {
                                     <ListItemText primary="Santosh Parauli"  />
                                 </ListItem>
                                 </a>
-                                <a href="https://instagram.com/santos_parajuli">
+                                <a target="_blank" rel="noreferrer" href="https://instagram.com/santos_parajuli">
                                 <ListItem className={classes.listItem}>
                                     <ListItemIcon>
                                         <InstagramIcon/>
@@ -166,7 +192,7 @@ export default function Resume() {
                                     <ListItemText primary="@santos_parajuli"  />
                                 </ListItem>
                                 </a>
-                                <a href="https://twitter.com/SntoshParajuli/">
+                                <a target="_blank" rel="noreferrer" href="https://twitter.com/SntoshParajuli/">
                                  <ListItem className={classes.listItem}>
                                     <ListItemIcon>
                                         <TwitterIcon/>
@@ -191,51 +217,20 @@ export default function Resume() {
                                                 About Me
                                             </Typography>
                                         </ListItem>
-                                        <ListItem>
-                                            <ListItemText 
-                                            primary="Programming"
-                                            secondary={
-                                            <Typography variant="body2" style={{color:"#ddedf0"}}>
-                                                C++/C , JavaScript , Python , Java
-                                            </Typography>   
-                                            }/>
-                                        </ListItem>
-                                        <ListItem>
-                                            <ListItemText 
-                                            primary="Web"
-                                            secondary={
-                                            <Typography variant="body2" style={{color:"#ddedf0"}}>
-                                                Django , NodeJS , React , Angular , Express
-                                            </Typography>   
-                                            }/>
-                                        </ListItem>
-                                        <ListItem>
-                                            <ListItemText 
-                                            primary="Intrest"
-                                            secondary={
-                                            <Typography variant="body2" style={{color:"#ddedf0"}}>
-                                                Web Development , Mobile App Development , Big Data , IOT , AI
-                                            </Typography>   
-                                            }/>
-                                        </ListItem>
-                                        <ListItem>
-                                            <ListItemText 
-                                            primary="Languages"
-                                            secondary={
-                                            <Typography variant="body2" style={{color:"#ddedf0"}}>
-                                                English , Hindi , Nepali
-                                            </Typography>   
-                                            }/>
-                                        </ListItem>
-                                        <ListItem>
-                                            <ListItemText 
-                                            primary="Nationality"
-                                            secondary={
-                                            <Typography variant="body2" style={{color:"#ddedf0"}}>
-                                                Nepali
-                                            </Typography>   
-                                            }/>
-                                        </ListItem>
+                                        {aboutMe.map((item)=>{
+                                            return (<>
+                                                <ListItem>
+                                                    <ListItemText 
+                                                    primary={item.topic}
+                                                    secondary={
+                                                    <Typography variant="body2" style={{color:"#ddedf0"}}>
+                                                        {item.desc}
+                                                    </Typography>   
+                                                    }/>
+                                                </ListItem>
+                                            </>)
+                                        })}
+                                        
                                     </List>
                                 </Grid>
                                 <Grid item xs={12} sm={6}>
@@ -243,41 +238,17 @@ export default function Resume() {
                                                 Skills
                                     </Typography> 
                                     <List>
-                                        <ListItem>
-                                            <ListItemText 
-                                            primary="HTML , CSS"
-                                            secondary={
-                                                <LinearProgress style={{height:"8px",borderRadius:"5px"}} variant="determinate" value="80"/>   
-                                            }/>
-                                        </ListItem>
-                                        <ListItem>
-                                            <ListItemText 
-                                            primary="NodeJs"
-                                            secondary={
-                                                <LinearProgress style={{height:"8px",borderRadius:"5px"}} variant="determinate" value="60"/>   
-                                            }/>
-                                        </ListItem>
-                                        <ListItem>
-                                            <ListItemText 
-                                            primary="React"
-                                            secondary={
-                                                <LinearProgress style={{height:"8px",borderRadius:"5px"}} variant="determinate" value="70"/>   
-                                            }/>
-                                        </ListItem>
-                                        <ListItem>
-                                            <ListItemText 
-                                            primary="Django"
-                                            secondary={
-                                                <LinearProgress style={{height:"8px",borderRadius:"5px"}} variant="determinate" value="40"/>   
-                                            }/>
-                                        </ListItem>
-                                        <ListItem>
-                                            <ListItemText 
-                                            primary="Firebase , Mongo"
-                                            secondary={
-                                                <LinearProgress style={{height:"8px",borderRadius:"5px"}} variant="determinate" value="65"/>   
-                                            }/>
-                                        </ListItem> 
+                                        {skills.map((skill)=>{
+                                            return <>
+                                                <ListItem>
+                                                    <ListItemText 
+                                                    primary={skill.name}
+                                                    secondary={
+                                                        <LinearProgress style={{height:"8px",borderRadius:"5px"}} variant="determinate" value={skill.value}/>   
+                                                    }/>
+                                                </ListItem>
+                                            </>
+                                        })};
                                     </List>
                                 </Grid>
 
@@ -288,207 +259,67 @@ export default function Resume() {
                             </Typography> 
                         <Grid items>
                             <Timeline align="alternate">
-                                    <TimelineItem>
-                                        <TimelineSeparator>
-                                            <TimelineDot>
-                                                <DomainIcon/>
-                                            </TimelineDot>
-                                            <TimelineConnector/>
-                                        </TimelineSeparator>
-                                        <TimelineContent>
-                                            <Typography variant="body2">
-                                                2015
-                                            </Typography>
-                                            <Paper elevation={3} className={classes.timelinePaper} >
-                                                <Typography variant="h6" component="h1">
-                                                Little Flower School
-                                                </Typography>
-                                                <Typography>
-                                                    Grade X [SLC] - 85.9% 
-                                                </Typography>
-                                            </Paper>
-                                        </TimelineContent>
-                                    </TimelineItem>
-                                    <TimelineItem>
-                                        <TimelineSeparator>
-                                            <TimelineDot>
-                                                <ApartmentIcon/>
-                                            </TimelineDot>
-                                            <TimelineConnector/>
-                                        </TimelineSeparator>
-                                        <TimelineContent>
-                                                <Typography variant="body2">
-                                                 2017
-                                            </Typography>
-                                            <Paper elevation={3} className={classes.timelinePaper} >
-                                                <Typography variant="h6" component="h1">
-                                                Orchid Higher Secondary School
-                                                </Typography>
-                                                <Typography>
-                                                    Grade XI and XII [NEB] - 76% 
-                                                </Typography>
-                                            </Paper>
-                                        </TimelineContent>
-                                    </TimelineItem>
-                                    <TimelineItem>
-                                        <TimelineSeparator>
-                                            <TimelineDot>
-                                                <SchoolIcon/>
-                                            </TimelineDot>
-                                            <TimelineConnector/>
-                                        </TimelineSeparator>
-                                        <TimelineContent>
-                                            <Typography variant="body2">
-                                                July 2017 - July 2021
-                                            </Typography>
-                                            <Paper elevation={3} className={classes.timelinePaper} >
-                                                <Typography variant="h6" component="h1">
-                                                Amritsar College Of Engineering And technology
-                                                </Typography>
-                                                <Typography>
-                                                    B.Tech CSE [PTU] - Average 8.9CGPA 
-                                                </Typography>
-                                            </Paper>
-                                        </TimelineContent>
-                                    </TimelineItem>
+                                {
+                                    educationData.map((education)=>{
+                                        return <>
+                                            <TimelineItem>
+                                                <TimelineSeparator>
+                                                    <TimelineDot>
+                                                        <SchoolIcon/>
+                                                    </TimelineDot>
+                                                    <TimelineConnector/>
+                                                </TimelineSeparator>
+                                                <TimelineContent>
+                                                    <Typography variant="body2">
+                                                        {education.date}
+                                                    </Typography>
+                                                    <Paper elevation={3} className={classes.timelinePaper} >
+                                                        <Typography variant="h6" component="h1">
+                                                            {education.name}
+                                                        </Typography>
+                                                        <Typography>
+                                                            {education.course}
+                                                        </Typography>
+                                                    </Paper>
+                                                </TimelineContent>
+                                            </TimelineItem>
+                                        </>
+                                    })
+                                }
                             </Timeline>
                         </Grid>
                     </Grid>
                 </Container>
             </Grid>
             <Grid items xs={12} style={{margin:"30px"}}>
-                  <Typography align="center" variant="h3" color="#fff" >
-                        Projects Showcase
-                    </Typography> 
-                    <Grid container direction="row">
-                        <Grid item xs={12} sm={6} md={4}>
-                            <Card className={classes.card}>
-                                <CardMedia component="img" alt="project" image="https://i.imgur.com/xulCSoN.gif" height="200px" style={{objectFit:"contain"}}/>
-                                <CardContent style={{paddingBottom:"5px"}}>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        Santosh Sakar Pustak Pasal Website
-                                    </Typography>
-                                    <Divider/>
-                                    <Typography variant="body2" component="p">
-                                            It is an MERN full stack app for my home shop Santosh Sakar Pustak Pasal. I created this website so that our customers can order the book online.
-                                    </Typography>
-                                    <Divider/>
-                                    <CardActions disableSpacing>
-                                        
-                                        <a href="https://santoshsakar.netlify.app/">
-                                            <Button size="small">
-                                                View Live
-                                            </Button>
-                                        </a>
-                                    </CardActions>
-                                </CardContent>
-                            </Card>
-                        </Grid>
-                        <Grid item xs={12} sm={6} md={4}>
-                            <Card className={classes.card}>
-                                <CardMedia component="img" alt="project" image="https://i.imgur.com/NMkzZy5.gif" height="200px" style={{objectFit:"contain"}}/>
-                                <CardContent style={{paddingBottom:"5px"}}>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        Lyrical
-                                    </Typography>
-                                    <Divider/>
-                                    <Typography variant="body2" component="p">
-                                        This is a react app with Node and Express as backend. This app shows the Lyrics of the searched song using Genius API. This project helped me lear redux,axios multiple request,class components of react and many more.
-                                    </Typography>
-                                    <Divider/>
-                                    <CardActions disableSpacing>
-                                        <a href="https://github.com/santos-parajuli/Lyrical">
-                                        <Button size="small">
-                                            See Code
-                                        </Button>
-                                        </a>
-                                        <a href="https://lyricalmern.netlify.app/">
-                                            <Button size="small">
-                                                View Live
-                                            </Button>
-                                            </a>
-                                    </CardActions>
-                                </CardContent>
-                            </Card>
-                        </Grid>
-                        <Grid item xs={12} sm={6} md={4}>
-                            <Card className={classes.card}>
-                                <CardMedia component="img" alt="project" image="https://i.imgur.com/Js1KHHV.gif" height="200px" style={{objectFit:"contain"}}/>
-                                <CardContent style={{paddingBottom:"5px"}}>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        Mern OAuth
-                                    </Typography>
-                                    <Divider/>
-                                    <Typography variant="body2" component="p">
-                                        This app is an upgraded verison of <a href="https://github.com/santos-parajuli/MERN_Authentication"> Mern authentication</a>. It includes authentication with third party provider like facebook and google which is widely used nowdays.It have better worl structure in project. 
-                                    </Typography>
-                                    <Divider/>
-                                    <CardActions disableSpacing>
-                                        <a href="https://github.com/santos-parajuli/MERN_OAUTH">
-                                        <Button size="small">
-                                            See Code
-                                        </Button>
-                                        </a>
-                                        <a href="https://oauthmern.netlify.app/#/">
-                                            <Button size="small">
-                                                View Live
-                                            </Button>
-                                            </a>
-                                    </CardActions>
-                                </CardContent>
-                            </Card>
-                        </Grid>
-                        <Grid item xs={12} sm={6} md={4}>
-                            <Card className={classes.card}>
-                                <CardMedia component="img" alt="project" image="https://i.imgur.com/HfCSMEm.png" height="200px" style={{objectFit:"contain"}}/>
-                                <CardContent style={{paddingBottom:"5px"}}>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        INAWISH
-                                    </Typography>
-                                    <Divider/>
-                                    <Typography variant="body2" component="p">
-                                        This is a mobile application build with android studio.This is just an try to imitate instagram. This is a photo sharing app. It use firebase for authenticating user and firestore to store data uploaded.
-                                    </Typography>
-                                    <Divider/>
-                                    <CardActions disableSpacing>
-                                        <a href="https://github.com/santos-parajuli/MADProject">
-                                            <Button size="small">
-                                                See Code
-                                            </Button>
-                                        </a>
-                                    </CardActions>
-                                </CardContent>
-                            </Card>
-                        </Grid>
-                        <Grid item xs={12} sm={6} md={4}>
-                            <Card className={classes.card}>
-                                <CardMedia component="img" alt="project" image="https://i.imgur.com/dkbrU9T.gif" height="200px" style={{objectFit:"contain"}}/>
-                                <CardContent style={{paddingBottom:"5px"}}>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        Mern Authentication
-                                    </Typography>
-                                    <Divider/>
-                                    <Typography variant="body2" component="p">
-                                            As the name implies. It is an MERN full stack app for authentication. It use React as front end, MongoDB for storing users data, PassportJS for authentication, bcrypt for password hashing and many other modules.
-                                    </Typography>
-                                    <Divider/>
-                                    <CardActions disableSpacing>
-                                        <a href="https://github.com/santos-parajuli/MERN_Authentication">
-                                        <Button size="small">
-                                            See Code
-                                        </Button>
-                                        </a>
-                                        <a href="https://oauthmern.netlify.app/#/">
-                                            <Button size="small">
-                                                View Live
-                                            </Button>
-                                        </a>
-                                    </CardActions>
-                                </CardContent>
-                            </Card>
-                            
-                        </Grid>
-                    </Grid>
+                <Typography align="center" variant="h3" color="#fff" >
+                    Projects Showcase
+                </Typography> 
+                <Grid container direction="row">
+                    {projectData.map((project)=>{
+                        return <>
+                            <Grid item xs={12} sm={6} md={4}>
+                                <Card className={classes.card}>
+                                    <CardMedia component="img" alt="project" image={project.image} height="200px" style={{objectFit:"contain"}}/>
+                                    <CardContent style={{paddingBottom:"5px"}}>
+                                        <Typography gutterBottom variant="h5" component="h2">
+                                            {project.name}
+                                        </Typography>
+                                        <Divider/>
+                                        <Typography variant="body2" component="p">
+                                            {project.desc}
+                                        </Typography>
+                                        <Divider/>
+                                        <CardActions disableSpacing>
+                                            {(project.viewLive)?<a href={project.viewLive}><Button size="small">View Live</Button></a>:false}
+                                            {(project.seeCode) ?<a href={project.seeCode}><Button size="small">See Code</Button></a>:false}
+                                        </CardActions>
+                                    </CardContent>
+                                </Card>
+                            </Grid>
+                        </>
+                    })}
+                </Grid>
             </Grid>
         </Grid>
 
