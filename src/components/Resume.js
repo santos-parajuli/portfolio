@@ -248,7 +248,7 @@ export default function Resume() {
                                                     }/>
                                                 </ListItem>
                                             </>
-                                        })};
+                                        })}
                                     </List>
                                 </Grid>
 
