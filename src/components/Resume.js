@@ -98,7 +98,7 @@ export default function Resume() {
         {image:"https://i.imgur.com/Js1KHHV.gif",name:"Mern Oauth",desc:"This app is an upgraded verison of Mern authentication. It includes authentication with third party provider like facebook and google which is widely used nowdays.It have better worl structure in project.",viewLive:"https://oauthmern.netlify.app/#/",seeCode:"https://github.com/santos-parajuli/MERN_OAUTH"},
         {image:"https://i.imgur.com/HfCSMEm.png",name:"INAWISH",desc:"This is a mobile application build with android studio.This is just an try to imitate instagram. This is a photo sharing app. It use firebase for authenticating user and firestore to store data uploaded.",seeCode:"https://github.com/santos-parajuli/MADProject"},
         {image:"https://i.imgur.com/dkbrU9T.gif",name:"Mern Authentication",desc:"As the name implies. It is an MERN full stack app for authentication. It use React as front end, MongoDB for storing users data, PassportJS for authentication, bcrypt for password hashing and many other modules.",viewLive:"https://oauthmern.netlify.app/#/",seeCode:"https://github.com/santos-parajuli/MERN_Authentication"},
-        {image:"https://i.imgur.com/FampZw1.gifv",name:"Amazone Cline",desc:"It is an React application developed with tailwind CSS and Firebase for authentication.",viewLive:"https://amazon.siwani.com.np/",seeCode:"https://github.com/santos-parajuli/Amazon-clone"},
+        {image:"https://i.imgur.com/FampZw1.gif",name:"Amazone Clone",desc:"It is an React application developed with tailwind CSS and Firebase for authentication.",viewLive:"https://amazon.siwani.com.np/",seeCode:"https://github.com/santos-parajuli/Amazon-clone"},
     
     ];
     const skills=[
