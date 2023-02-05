@@ -93,7 +93,6 @@ export default function Resume() {
         {date:"2015",name:"Little Flower School, Nepal",course:"Grade X [SLC] - 85.9%"},
     ];
     const projectData=[
-        https://frontendproject.siwani.com.np/
         {image:"https://i.imgur.com/FampZw1.gif",name:"Amazone Clone",desc:"Amazon Clone is a web app build with React Js. The app uses tailwind CSS for styling and have firebase for authentication of user using email and password. It uses pagination to display the product data in different pages dynamicallty.",viewLive:"https://amazon.siwani.com.np/",seeCode:"https://github.com/santos-parajuli/Amazon-clone"},
         {image:"https://i.imgur.com/Js1KHHV.gif",name:"Santosh Sakar Pustak pasal",desc:"It is an MERN full stack app for my home shop Santosh Sakar Pustak Pasal. I created this website so that our customers can order the book online.",viewLive:"https://santoshsakar.netlify.app/",},
         {image:"https://i.imgur.com/NMkzZy5.gif",name:"Lyrical",desc:"This is a react app with Node and Express as backend. This app shows the Lyrics of the searched song using Genius API. This project helped me lear redux,axios multiple request,class components of react and many more.",viewLive:"https://lyricalmern.netlify.app/",seeCode:"https://github.com/santos-parajuli/Lyrical"},
