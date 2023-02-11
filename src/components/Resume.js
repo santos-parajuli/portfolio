@@ -188,12 +188,12 @@ export default function Resume() {
                                     <ListItemText primary="Santosh Parauli"  />
                                 </ListItem>
                                 </a>
-                                <a target="_blank" rel="noreferrer" href="https://instagram.com/santos_parajuli">
+                                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/santosparajuli_/">
                                 <ListItem className={classes.listItem}>
                                     <ListItemIcon>
                                         <InstagramIcon/>
                                     </ListItemIcon>
-                                    <ListItemText primary="@santos_parajuli"  />
+                                    <ListItemText primary="@santosparajuli_"  />
                                 </ListItem>
                                 </a>
                                 <a target="_blank" rel="noreferrer" href="https://twitter.com/SntoshParajuli/">
