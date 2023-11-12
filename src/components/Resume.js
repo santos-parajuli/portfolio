@@ -93,6 +93,7 @@ export default function Resume() {
         {date:"2015",name:"Little Flower School, Nepal",course:"Grade X [SLC] - 85.9%"},
     ];
     const projectData=[
+        {image:"https://i.imgur.com/wdyoTgf.gif",name:"SafetySurfacing.ca",desc:"This is a site for a local flooring company in Brantford which has certain specific requirements asked by clients like BEFORE vs AFTER and Visualization of floor with different mixture of colors for the floor. It is build with NEXTJS and tailwindcss.",viewLive:"https://safety-surfacing-ww2p.vercel.app/"},
         {image:"https://i.imgur.com/MVoOWRH.gif",name:"Instagram Clone",desc:"The project is build with ReactJs, TailwindCSS and Firebase. As the name suggests it's a clone of instagram where you can create account, add post, likes, comment and edit profile for now.",viewLive:"https://instagram.siwani.com.np/"},
         {image:"https://i.imgur.com/FampZw1.gif",name:"Amazone Clone",desc:"Amazon Clone is a web app build with React Js. The app uses tailwind CSS for styling and have firebase for authentication of user using email and password. It uses pagination to display the product data in different pages dynamicallty.",viewLive:"https://amazon.siwani.com.np/",seeCode:"https://github.com/santos-parajuli/Amazon-clone"},
         {image:"https://i.imgur.com/xulCSoN.gif",name:"Santosh Sakar Pustak pasal",desc:"It is an MERN full stack app for my home shop Santosh Sakar Pustak Pasal. I created this website so that our customers can order the book online.",viewLive:"https://santoshsakar.netlify.app/",},
